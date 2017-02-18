@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>maybe str(Data2) ; plot(Data2) &hellip;</title>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 13px;
+}
+
+body {
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+  line-height: 20px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 {
+   font-size:2.2em;
+}
+
+h2 {
+   font-size:1.8em;
+}
+
+h3 {
+   font-size:1.4em;
+}
+
+h4 {
+   font-size:1.0em;
+}
+
+h5 {
+   font-size:0.9em;
+}
+
+h6 {
+   font-size:0.8em;
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre, img {
+  max-width: 100%;
+}
+pre {
+  overflow-x: auto;
+}
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code {
+  font-size: 92%;
+  border: 1px solid #ccc;
+}
+
+code[class] {
+  background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * {
+      background: transparent !important;
+      color: black !important;
+      filter:none !important;
+      -ms-filter: none !important;
+   }
+
+   body {
+      font-size:12pt;
+      max-width:100%;
+   }
+
+   a, a:visited {
+      text-decoration: underline;
+   }
+
+   hr {
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote {
+      padding-right: 1em;
+      page-break-inside: avoid;
+   }
+
+   tr, img {
+      page-break-inside: avoid;
+   }
+
+   img {
+      max-width: 100% !important;
+   }
+
+   @page :left {
+      margin: 15mm 20mm 15mm 10mm;
+   }
+
+   @page :right {
+      margin: 15mm 10mm 15mm 20mm;
+   }
+
+   p, h2, h3 {
+      orphans: 3; widows: 3;
+   }
+
+   h2, h3 {
+      page-break-after: avoid;
+   }
+}
+</style>
+
+
+
+</head>
+
+<body>
+<p>\name{Data2}
+\alias{Data2}
+\docType{data}
+\title{
+%%   ~~ data name/kind &hellip; ~~
+}
+\description{
+%%  ~~ A concise (1-5 lines) description of the dataset. ~~
+}
+\usage{data(&ldquo;Data2&rdquo;)}
+\format{
+  A data frame with 180 observations on the following 68 variables.
+  \describe{
+    \item{\code{subject}}{a numeric vector}
+    \item{\code{activity}}{a numeric vector}
+    \item{\samp{timeBodyAccelerometer-mean()-X}}{a numeric vector}
+    \item{\samp{timeBodyAccelerometer-mean()-Y}}{a numeric vector}
+    \item{\samp{timeBodyAccelerometer-mean()-Z}}{a numeric vector}
+    \item{\samp{timeBodyAccelerometer-std()-X}}{a numeric vector}
+    \item{\samp{timeBodyAccelerometer-std()-Y}}{a numeric vector}
+    \item{\samp{timeBodyAccelerometer-std()-Z}}{a numeric vector}
+    \item{\samp{timeGravityAccelerometer-mean()-X}}{a numeric vector}
+    \item{\samp{timeGravityAccelerometer-mean()-Y}}{a numeric vector}
+    \item{\samp{timeGravityAccelerometer-mean()-Z}}{a numeric vector}
+    \item{\samp{timeGravityAccelerometer-std()-X}}{a numeric vector}
+    \item{\samp{timeGravityAccelerometer-std()-Y}}{a numeric vector}
+    \item{\samp{timeGravityAccelerometer-std()-Z}}{a numeric vector}
+    \item{\samp{timeBodyAccelerometerJerk-mean()-X}}{a numeric vector}
+    \item{\samp{timeBodyAccelerometerJerk-mean()-Y}}{a numeric vector}
+    \item{\samp{timeBodyAccelerometerJerk-mean()-Z}}{a numeric vector}
+    \item{\samp{timeBodyAccelerometerJerk-std()-X}}{a numeric vector}
+    \item{\samp{timeBodyAccelerometerJerk-std()-Y}}{a numeric vector}
+    \item{\samp{timeBodyAccelerometerJerk-std()-Z}}{a numeric vector}
+    \item{\samp{timeBodyGyroscope-mean()-X}}{a numeric vector}
+    \item{\samp{timeBodyGyroscope-mean()-Y}}{a numeric vector}
+    \item{\samp{timeBodyGyroscope-mean()-Z}}{a numeric vector}
+    \item{\samp{timeBodyGyroscope-std()-X}}{a numeric vector}
+    \item{\samp{timeBodyGyroscope-std()-Y}}{a numeric vector}
+    \item{\samp{timeBodyGyroscope-std()-Z}}{a numeric vector}
+    \item{\samp{timeBodyGyroscopeJerk-mean()-X}}{a numeric vector}
+    \item{\samp{timeBodyGyroscopeJerk-mean()-Y}}{a numeric vector}
+    \item{\samp{timeBodyGyroscopeJerk-mean()-Z}}{a numeric vector}
+    \item{\samp{timeBodyGyroscopeJerk-std()-X}}{a numeric vector}
+    \item{\samp{timeBodyGyroscopeJerk-std()-Y}}{a numeric vector}
+    \item{\samp{timeBodyGyroscopeJerk-std()-Z}}{a numeric vector}
+    \item{\samp{timeBodyAccelerometerMagnitude-mean()}}{a numeric vector}
+    \item{\samp{timeBodyAccelerometerMagnitude-std()}}{a numeric vector}
+    \item{\samp{timeGravityAccelerometerMagnitude-mean()}}{a numeric vector}
+    \item{\samp{timeGravityAccelerometerMagnitude-std()}}{a numeric vector}
+    \item{\samp{timeBodyAccelerometerJerkMagnitude-mean()}}{a numeric vector}
+    \item{\samp{timeBodyAccelerometerJerkMagnitude-std()}}{a numeric vector}
+    \item{\samp{timeBodyGyroscopeMagnitude-mean()}}{a numeric vector}
+    \item{\samp{timeBodyGyroscopeMagnitude-std()}}{a numeric vector}
+    \item{\samp{timeBodyGyroscopeJerkMagnitude-mean()}}{a numeric vector}
+    \item{\samp{timeBodyGyroscopeJerkMagnitude-std()}}{a numeric vector}
+    \item{\samp{frequencyBodyAccelerometer-mean()-X}}{a numeric vector}
+    \item{\samp{frequencyBodyAccelerometer-mean()-Y}}{a numeric vector}
+    \item{\samp{frequencyBodyAccelerometer-mean()-Z}}{a numeric vector}
+    \item{\samp{frequencyBodyAccelerometer-std()-X}}{a numeric vector}
+    \item{\samp{frequencyBodyAccelerometer-std()-Y}}{a numeric vector}
+    \item{\samp{frequencyBodyAccelerometer-std()-Z}}{a numeric vector}
+    \item{\samp{frequencyBodyAccelerometerJerk-mean()-X}}{a numeric vector}
+    \item{\samp{frequencyBodyAccelerometerJerk-mean()-Y}}{a numeric vector}
+    \item{\samp{frequencyBodyAccelerometerJerk-mean()-Z}}{a numeric vector}
+    \item{\samp{frequencyBodyAccelerometerJerk-std()-X}}{a numeric vector}
+    \item{\samp{frequencyBodyAccelerometerJerk-std()-Y}}{a numeric vector}
+    \item{\samp{frequencyBodyAccelerometerJerk-std()-Z}}{a numeric vector}
+    \item{\samp{frequencyBodyGyroscope-mean()-X}}{a numeric vector}
+    \item{\samp{frequencyBodyGyroscope-mean()-Y}}{a numeric vector}
+    \item{\samp{frequencyBodyGyroscope-mean()-Z}}{a numeric vector}
+    \item{\samp{frequencyBodyGyroscope-std()-X}}{a numeric vector}
+    \item{\samp{frequencyBodyGyroscope-std()-Y}}{a numeric vector}
+    \item{\samp{frequencyBodyGyroscope-std()-Z}}{a numeric vector}
+    \item{\samp{frequencyBodyAccelerometerMagnitude-mean()}}{a numeric vector}
+    \item{\samp{frequencyBodyAccelerometerMagnitude-std()}}{a numeric vector}
+    \item{\samp{frequencyBodyAccelerometerJerkMagnitude-mean()}}{a numeric vector}
+    \item{\samp{frequencyBodyAccelerometerJerkMagnitude-std()}}{a numeric vector}
+    \item{\samp{frequencyBodyGyroscopeMagnitude-mean()}}{a numeric vector}
+    \item{\samp{frequencyBodyGyroscopeMagnitude-std()}}{a numeric vector}
+    \item{\samp{frequencyBodyGyroscopeJerkMagnitude-mean()}}{a numeric vector}
+    \item{\samp{frequencyBodyGyroscopeJerkMagnitude-std()}}{a numeric vector}
+  }
+}
+\details{
+%%  ~~ If necessary, more details than the <strong>description</strong> above ~~
+}
+\source{
+%%  ~~ reference to a publication or URL from which the data were obtained ~~
+}
+\references{
+%%  ~~ possibly secondary sources and usages ~~
+}
+\examples{
+data(Data2)</p>
+
+<h2>maybe str(Data2) ; plot(Data2) &hellip;</h2>
+
+<p>}
+\keyword{datasets}</p>
+
+</body>
+
+</html>
